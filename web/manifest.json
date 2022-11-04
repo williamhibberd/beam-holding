@@ -1,0 +1,46 @@
+{
+  "src/fonts/GoodSans-Light.woff2": {
+    "file": "assets/GoodSans-Light.e65c7563.woff2",
+    "src": "src/fonts/GoodSans-Light.woff2",
+    "integrity": "sha384-xViCYwxy2x/8pzPHVziD7EozvTOMi7qlFVqRVvP6ALohwwlyiYwYI2wBPVstaAob"
+  },
+  "src/fonts/GoodSans-Black.woff2": {
+    "file": "assets/GoodSans-Black.a09954db.woff2",
+    "src": "src/fonts/GoodSans-Black.woff2",
+    "integrity": "sha384-IGabpisDoz4E58tgkYftLaf33+FAkvGfB4+e7VdG7qiutyNryQZ49w3EIUHhFTju"
+  },
+  "src/js/app.js": {
+    "file": "assets/app.2e73cdb0.js",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_app.a3a8f3c0.js"
+    ],
+    "integrity": "sha384-Yt0LixwDVsg5VL68XrWwpTHW5O9OLa+e6MQg9JgkU8PonAXMkWiS2UJSwz71pTXZ"
+  },
+  "index.html": {
+    "file": "assets/main.d4ff9d67.js",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_app.a3a8f3c0.js"
+    ],
+    "integrity": "sha384-HkodLN1vl2dvwhnsduUCJDB2as+EDLYRXTHd80+aG8PLwS5P9Tm9ffDfyPRflbD0"
+  },
+  "_app.a3a8f3c0.js": {
+    "file": "assets/app.a3a8f3c0.js",
+    "css": [
+      "assets/app.52dc45bc.css"
+    ],
+    "assets": [
+      "assets/GoodSans-Light.e65c7563.woff2",
+      "assets/GoodSans-Black.a09954db.woff2"
+    ],
+    "integrity": "sha384-MCY/tA1n35bNmYb8k0+uY6L4uXkr0pVuy/oVyyOTfIujyy/qivCn36Q1aCQ8NLwT"
+  },
+  "app.css": {
+    "file": "assets/app.52dc45bc.css",
+    "src": "app.css",
+    "integrity": "sha384-5GnQYqfsbpmw8ql/swDS/t9d8Z+a8QNM2UH9MKwkGanWRDqZFNJGZuSy31W2xI+b"
+  }
+}

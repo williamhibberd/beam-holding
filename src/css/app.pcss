@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "good-sans";
+		src: url("../fonts/GoodSans-Light.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: "good-sans";
+		src: url("../fonts/GoodSans-Black.woff2") format("woff2");
+		font-weight: 700;
+		font-style: normal;
+	}
+	body {
+		@apply bg-white text-black selection:bg-black selection:text-white;
+	}
+	a {
+		@apply rounded-full border border-black px-20 py-10 transition-colors duration-300 bg-white hover:bg-black hover:text-white grow text-center;
+	}
+	address {
+		@apply not-italic;
+	}
+}

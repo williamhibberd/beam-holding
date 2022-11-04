@@ -4,22 +4,22 @@
 
 @layer base {
 	@font-face {
-		font-family: "good-sans";
-		src: url("../fonts/GoodSans-Light.woff2") format("woff2");
+		font-family: "visuelt";
+		src: url("../fonts/visuelt-regular.woff2") format("woff2");
 		font-weight: normal;
 		font-style: normal;
 	}
 	@font-face {
-		font-family: "good-sans";
-		src: url("../fonts/GoodSans-Black.woff2") format("woff2");
+		font-family: "visuelt";
+		src: url("../fonts/visuelt-medium.woff2") format("woff2");
 		font-weight: 700;
 		font-style: normal;
 	}
 	body {
-		@apply bg-white text-black selection:bg-black selection:text-white;
+		@apply text-white selection:bg-black/50 selection:text-white text-lg leading-[1.4em];
 	}
 	a {
-		@apply rounded-full border border-black px-20 py-10 transition-colors duration-300 bg-white hover:bg-black hover:text-white grow text-center;
+		@apply transition-colors duration-1000 hover:text-white/50;
 	}
 	address {
 		@apply not-italic;

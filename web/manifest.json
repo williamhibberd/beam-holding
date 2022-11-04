@@ -1,46 +1,39 @@
 {
-  "src/fonts/GoodSans-Light.woff2": {
-    "file": "assets/GoodSans-Light.e65c7563.woff2",
-    "src": "src/fonts/GoodSans-Light.woff2",
-    "integrity": "sha384-xViCYwxy2x/8pzPHVziD7EozvTOMi7qlFVqRVvP6ALohwwlyiYwYI2wBPVstaAob"
+  "src/fonts/visuelt-regular.woff2": {
+    "file": "assets/visuelt-regular.e711c649.woff2",
+    "src": "src/fonts/visuelt-regular.woff2",
+    "integrity": "sha384-XFugaPHYAk3MAIOOg1Kc9y9oxi4HVsBrzdO3lGO7rkr7qMHpVXBaKjMcz5F/LBvj"
   },
-  "src/fonts/GoodSans-Black.woff2": {
-    "file": "assets/GoodSans-Black.a09954db.woff2",
-    "src": "src/fonts/GoodSans-Black.woff2",
-    "integrity": "sha384-IGabpisDoz4E58tgkYftLaf33+FAkvGfB4+e7VdG7qiutyNryQZ49w3EIUHhFTju"
+  "src/fonts/visuelt-medium.woff2": {
+    "file": "assets/visuelt-medium.4aefe799.woff2",
+    "src": "src/fonts/visuelt-medium.woff2",
+    "integrity": "sha384-DfslUR8a69ZBh/2rIGS8McaRaojEuqB+q8chPhpwjB8u1CB0mPotEW+CrJ2iOJhw"
   },
   "src/js/app.js": {
-    "file": "assets/app.2e73cdb0.js",
+    "file": "assets/app.e32abf4e.js",
     "src": "src/js/app.js",
     "isEntry": true,
-    "imports": [
-      "_app.a3a8f3c0.js"
+    "css": [
+      "assets/app.3df138ce.css"
     ],
-    "integrity": "sha384-Yt0LixwDVsg5VL68XrWwpTHW5O9OLa+e6MQg9JgkU8PonAXMkWiS2UJSwz71pTXZ"
+    "assets": [
+      "assets/visuelt-regular.e711c649.woff2",
+      "assets/visuelt-medium.4aefe799.woff2"
+    ],
+    "integrity": "sha384-ArAxbpAT+sTrKf9f+StZZHrZN8m5vBt0iQeAdzDNV3Qj/1npGmHIDkJ3WghWyiJC"
   },
   "index.html": {
-    "file": "assets/main.d4ff9d67.js",
+    "file": "assets/main.682bd44f.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_app.a3a8f3c0.js"
+      "src/js/app.js"
     ],
-    "integrity": "sha384-HkodLN1vl2dvwhnsduUCJDB2as+EDLYRXTHd80+aG8PLwS5P9Tm9ffDfyPRflbD0"
+    "integrity": "sha384-MGvtnQt8DPSRJJrHORQJ/f3FEPt7aN+kOS8LA2hmuG6oGmsZV/nBi16qUXbEBzoO"
   },
-  "_app.a3a8f3c0.js": {
-    "file": "assets/app.a3a8f3c0.js",
-    "css": [
-      "assets/app.52dc45bc.css"
-    ],
-    "assets": [
-      "assets/GoodSans-Light.e65c7563.woff2",
-      "assets/GoodSans-Black.a09954db.woff2"
-    ],
-    "integrity": "sha384-MCY/tA1n35bNmYb8k0+uY6L4uXkr0pVuy/oVyyOTfIujyy/qivCn36Q1aCQ8NLwT"
-  },
-  "app.css": {
-    "file": "assets/app.52dc45bc.css",
-    "src": "app.css",
-    "integrity": "sha384-5GnQYqfsbpmw8ql/swDS/t9d8Z+a8QNM2UH9MKwkGanWRDqZFNJGZuSy31W2xI+b"
+  "src/js/app.css": {
+    "file": "assets/app.3df138ce.css",
+    "src": "src/js/app.css",
+    "integrity": "sha384-WCXmYRNvuMcMcVymdvef0fDf2WPbfF2FUGHAMZgzzdgT872Wy194oNXpqeGTvNr3"
   }
 }

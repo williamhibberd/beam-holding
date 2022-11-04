@@ -5,36 +5,36 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>
-			Sibyl – A forward-looking brand studio. London, Bristol, New York.
+			Beam – INCLUSIVE, FUN, CONCIOUS & CONVENIENT MAKEUP EXPERIENCES
 		</title>
 		<meta property="og:locale" content="en_GB" />
 		<meta
 			property="og:title"
-			content="Sibyl – A forward-looking brand studio. London, Bristol, New York."
+			content="Beam – INCLUSIVE, FUN, CONCIOUS & CONVENIENT MAKEUP EXPERIENCES"
 		/>
 		<meta
 			name="twitter:title"
-			content="Sibyl – A forward-looking brand studio. London, Bristol, New York."
+			content="Beam – INCLUSIVE, FUN, CONCIOUS & CONVENIENT MAKEUP EXPERIENCES"
 		/>
-		<meta property="og:site_name" content="Sibyl" />
-		<meta property="og:url" content="https://sibylstudio.com/" />
+		<meta property="og:site_name" content="Beam" />
+		<meta property="og:url" content="https://www.bemorebeam.com/" />
 		<meta
 			name="description"
-			content="Sibyl is a holistic brand studio offering a potent combination of creative direction, marketing and business development to purpose-led creative brands looking to empower their future."
+			content="To promote personal expression, confidence & self care through inclusive, fun, conscious and convenient makeup experiences."
 		/>
 		<meta
 			property="og:description"
-			content="Sibyl is a holistic brand studio offering a potent combination of creative direction, marketing and business development to purpose-led creative brands looking to empower their future."
+			content="To promote personal expression, confidence & self care through inclusive, fun, conscious and convenient makeup experiences."
 		/>
 		<meta
 			name="twitter:description"
-			content="Sibyl is a holistic brand studio offering a potent combination of creative direction, marketing and business development to purpose-led creative brands looking to empower their future."
+			content="To promote personal expression, confidence & self care through inclusive, fun, conscious and convenient makeup experiences."
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="og:image" content="/images/twitter-sibyl.png" />
+		<meta property="og:image" content="/images/twitter-beam.png" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:width" content="630" />
-		<meta name="twitter:image:src" content="/images/twitter-sibyl.png" />
+		<meta name="twitter:image:src" content="/images/twitter-beam.png" />
 		<meta name="twitter:image:width" content="1200" />
 		<meta name="twitter:image:height" content="600" />
 		<link
@@ -58,90 +58,187 @@
 		<link
 			rel="mask-icon"
 			href="/favicon/safari-pinned-tab.svg"
-			color="#1e1c1e"
+			color="#6871ff"
 		/>
-		<meta name="msapplication-TileColor" content="#1e1c1e" />
-		<meta name="theme-color" content="#1e1c1e" />
+		<meta name="msapplication-TileColor" content="#6871ff" />
+		<meta name="theme-color" content="#ffffff" />
 		<style type="text/css">
 			[x-cloak] {
 				display: none;
 			}
 		</style>
-		<script
+		<!-- TODO add cabin 
+			<script
 			async
 			defer
 			src="https://cabin.sibylstudio.com/hello.js"
-		></script>
-		<script type="module" crossorigin src="/assets/main.d4ff9d67.js"></script>
-		<link rel="modulepreload" crossorigin href="/assets/app.a3a8f3c0.js">
-		<link rel="stylesheet" href="/assets/app.52dc45bc.css">
+		></script> -->
+		<script type="module" crossorigin src="/assets/main.682bd44f.js"></script>
+		<link rel="modulepreload" crossorigin href="/assets/app.e32abf4e.js">
+		<link rel="stylesheet" href="/assets/app.3df138ce.css">
 	</head>
-	<body class="p-20 sm:p-40 flex flex-col min-h-screen">
-		<header class="flex justify-between space-x-20 sm:space-x-40">
-			<h2 class="text-lg">A forward-looking brand studio.</h2>
-			<ul
-				class="flex flex-col sm:flex-row text-md space-y-10 sm:space-y-0 sm:space-x-10"
+	<body
+		class="relative"
+		x-cloak
+		x-show="show"
+		x-data="{ show: false }"
+		x-init="$nextTick(() => { show = true })"
+		x-transition.opacity.duration.500ms
+	>
+		<header
+			x-cloak
+			x-data="{ open: false }"
+			@keyup.escape.window="open = false"
+			class="fixed right-20 top-20 z-50"
+		>
+			<h1 class="sr-only">Beam</h1>
+			<button
+				@click="open = !open"
+				type="button"
+				aria-label="Menu"
+				aria-controls="navigation"
+				:aria-expanded="open ? 'true':'false'"
+				class="relative block transition-all duration-1000 hover:text-white/50 w-30 h-20"
 			>
-				<li class="flex">
-					<a href="mailto:hello@sibylstudio.com"> Contact </a>
-				</li>
-				<li class="flex">
-					<a
-						href="https://www.instagram.com/sibylstudio/"
-						target="_blank"
+				<span
+					class="absolute inset-x-0 top-0 block h-2 transition-all w-30 duration-1000 bg-current"
+					:class="open ? 'translate-y-[9px] -rotate-45' : 'rotate-180'"
+				></span>
+				<span
+					class="absolute block w-full h-2 bg-current transition-opacity duration-1000 bottom-[9px] inset-x-0"
+					:class="open && 'opacity-0'"
+				></span>
+				<span
+					class="absolute inset-x-0 bottom-0 block h-2 transition-all w-30 duration-1000 bg-current"
+					:class="open ? '-translate-y-[9px] rotate-45' : '-rotate-180'"
+				></span>
+			</button>
+			<template x-teleport="main">
+				<article
+					x-cloak
+					x-show="open"
+					x-transition.opacity.duration.1000ms
+					class="fixed z-40 inset-0 bg-purple/50 backdrop-blur-lg grid grid-cols-1 gap-20"
+				>
+					<address
+						class="flex flex-col items-center justify-center px-20"
 					>
-						Instagram
-					</a>
-				</li>
-			</ul>
+						<h3 class="font-bold uppercase text-center">Contact</h3>
+						<p class="text-center">
+							<a href="mailto:contact@bemorebeam.com">Press</a
+							><br />
+							<a href="mailto:contact@bemorebeam.com"
+								>Brand Partnerships</a
+							><br />
+							<a
+								href="https://www.instagram.com/bemorebeam/"
+								target="_blank"
+								>@bemorebeam</a
+							>
+						</p>
+					</address>
+					<header class="flex items-center justify-center px-20">
+						<h3 class="uppercase font-bold text-center">
+							Pop-Up Store<br />
+							Opening Soon
+						</h3>
+					</header>
+					<footer
+						class="flex flex-col items-center justify-center px-20 w-full md:w-1/2 lg:w-1/3 mx-auto space-y-10"
+					>
+						<h3 class="uppercase font-bold text-center">
+							Be the first to know
+						</h3>
+						<form action="" class="flex w-full">
+							<fieldset class="relative w-full">
+								<input
+									type="text"
+									placeholder="email@email.com"
+									class="bg-transparent border-white w-full border placeholder:text-white/50 pl-20 py-10 pr-30"
+								/>
+								<button
+									class="absolute inset-y-0 right-0 px-20 transition-colors duration-1000 hover:bg-white hover:text-purple focus:bg-white focus:text-purple"
+								>
+									<svg
+										fill="currentColor"
+										class="stroke-current h-10"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 12"
+									>
+										<path
+											d="m18.334 1 4.492 5m0 0-4.492 5m4.492-5H1.266"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</button>
+							</fieldset>
+						</form>
+					</footer>
+				</article>
+			</template>
 		</header>
-		<main class="grow flex items-center justify-center">
-			<h1 class="sr-only">Sibyl</h1>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 721.85 150.07"
-				class="fill-current w-full max-w-[300px] sm:max-w-[720px]"
-				fill="currentColor"
-			>
-				<path
-					d="M8.04 125.3C2.68 117.29 0 107.87 0 97.03h36.04c.25 7.39 2.83 13.18 7.76 17.37 4.93 4.19 11.83 6.28 20.7 6.28s15.31-1.54 20.05-4.62 7.11-7.27 7.11-12.57c0-3.94-1.39-6.99-4.16-9.15-2.77-2.16-6.32-3.7-10.63-4.62-4.31-.92-10.29-1.76-17.93-2.5-11.34-1.23-20.64-2.8-27.91-4.71-7.27-1.91-13.52-5.73-18.76-11.46-5.24-5.73-7.86-14.08-7.86-25.04 0-9.36 2.34-17.53 7.02-24.49 4.68-6.96 11.4-12.29 20.14-15.99C40.35 1.85 50.7 0 62.65 0s22.33 1.94 31.51 5.82c9.18 3.88 16.33 9.49 21.44 16.82 5.11 7.33 7.67 15.99 7.67 25.97H87.79c-.49-6.04-2.96-10.75-7.39-14.14-4.44-3.39-10.53-5.08-18.3-5.08s-13.98 1.36-18.3 4.07c-4.31 2.71-6.47 6.59-6.47 11.64 0 3.94 1.36 6.93 4.07 8.96 2.71 2.03 6.19 3.45 10.44 4.25 4.25.8 10.07 1.51 17.46 2.13 11.58 1.11 21.07 2.65 28.46 4.62 7.39 1.97 13.77 5.91 19.13 11.83 5.36 5.91 8.04 14.6 8.04 26.06 0 9.36-2.46 17.59-7.39 24.67-4.93 7.08-12.01 12.6-21.25 16.54-9.24 3.94-20.08 5.91-32.53 5.91s-23.66-2.13-33.27-6.38c-9.61-4.25-17.1-10.38-22.46-18.39Zm255.1-94.44V2.96H158.41v27.9h36.47v88.34h-36.47v27.91h104.73V119.2h-36.47V30.86h36.47Zm178.72-27.9h35.3l36.04 58.96 35.85-58.96h35.3l-55.26 87.6v56.55h-31.97V90.56l-55.26-87.6Zm210.32 0V119.2h69.67v27.91H620.39V2.96h31.79Zm-236.3 80.85c-4.74-6.34-11.49-10.44-20.24-12.29 6.65-2.46 11.86-6.47 15.62-12.01s5.64-12.2 5.64-19.96c0-11.58-3.97-20.58-11.92-26.98-7.95-6.41-18.94-9.61-32.99-9.61h-68.38v144.15h73.19c8.87 0 16.82-1.76 23.84-5.27s12.51-8.38 16.45-14.6c3.94-6.22 5.91-13.15 5.91-20.79 0-8.75-2.37-16.3-7.12-22.64Zm-33.14 31.49c-4.12 2.51-10.52 3.83-19.13 3.97v.03h-4.71c-9.44 0-20.2-1.33-24.58-4-4.38-2.67-6.57-6.81-6.57-12.42 0-5.2 2.12-9.03 6.36-11.49 4.24-2.46 10.94-3.69 20.11-3.69h9.39c8.76.08 15.22 1.3 19.33 3.69 4.24 2.46 6.36 6.29 6.36 11.49 0 5.61-2.19 9.75-6.57 12.42Zm.41-58.58c-4.11 2.26-10.67 3.38-19.7 3.38h-9.97c-8.96-.01-15.49-1.14-19.57-3.38-4.1-2.26-6.16-5.92-6.16-10.98 0-5.47 2.05-9.24 6.16-11.29 3.94-1.97 10.48-2.98 19.57-3.06v-.02h8.94c9.71 0 16.62 1.03 20.73 3.08 4.1 2.05 6.16 5.81 6.16 11.29 0 5.06-2.05 8.72-6.16 10.98Z"
+		<main class="bg-purple min-h-screen relative z-30">
+			<section class="flex flex-col">
+				<img
+					class="w-7/12 pt-[33vh]"
+					ix-src="https://soello.imgix.net/bemorebeam/1.jpg"
+					alt="A hot air balloon on a sunny day"
+					ix-sizes="auto"
 				/>
-			</svg>
+				<img
+					class="w-1/2 pt-[33vh] place-self-end relative z-40"
+					ix-src="https://soello.imgix.net/bemorebeam/2.jpg"
+					alt="A hot air balloon on a sunny day"
+					ix-sizes="auto"
+				/>
+				<img
+					class="w-5/12 pt-[10vh] ml-[33%]"
+					ix-src="https://soello.imgix.net/bemorebeam/3.jpg"
+					alt="A hot air balloon on a sunny day"
+					ix-sizes="auto"
+				/>
+
+				<img
+					class="w-3/12 pt-[10vh]"
+					ix-src="https://soello.imgix.net/bemorebeam/4.jpg"
+					alt="A hot air balloon on a sunny day"
+					ix-sizes="auto"
+				/>
+
+				<img
+					class="w-1/2 -mt-[10vh] place-self-end"
+					ix-src="https://soello.imgix.net/bemorebeam/5.jpg"
+					alt="A hot air balloon on a sunny day"
+					ix-sizes="auto"
+				/>
+
+				<!-- <div
+					class="w-full md:w-1/2 lg:w-1/3 mx-auto text-center min-h-[33vh] flex items-center justify-center"
+				>
+					<h2 class="font-bold">
+						INCLUSIVE, FUN,<br />
+						CONCIOUS & CONVENIENT<br />
+						MAKEUP EXPERIENCES
+					</h2>
+				</div> -->
+			</section>
+			<div class="fixed bottom-20 inset-x-20">
+				<svg
+					class="w-full fill-current"
+					fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 456 143"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="m0 7.8 8.6 5.8v129.2h1.6c10-6.4 19.8-9.8 29.2-10.6V56.8c1.4-.2 2.6-.2 3.6-.2 19.8 0 24.4 17.6 24.4 35.8v11c0 22.8-6.2 35.4-17.2 35.4h-1.6v1.2c4.6 1.8 8.6 2.8 13.6 2.8 18.8 0 38.2-17.2 38.2-48.8v-3c0-24-13.2-46-36.4-46-12 0-21.2 7.2-24.6 10.6L40.2 0 0 6.6v1.2Zm152.22 37.4c-23 0-43.8 19.4-43.8 49.8v.8c0 28.8 19.6 47 43.8 47 16.2 0 28.6-6.2 39-18.2l-.8-1c-6.8 3.8-13.8 5.8-20.4 5.8-15.2 0-28.6-11-28.6-38.6v-.4c0-35.2 5-42.6 10.8-44v-1.2Zm9 41h-10.8v1.4h43.4v-3.2c0-18.6-13.8-37.6-32.6-39.4v41.2Zm70.26 29.8c0 11.6.6 17.2 7.8 17.2.8 0 1.6 0 2.6-.2l.4 1c-4.4 5.6-10.8 8.8-19 8.8-16.8 0-24-12.4-24-23.2 0-19 15-27.2 40.6-28.2v1.2c-6.2 1.8-8.4 6.4-8.4 22.8v.6Zm-11.8-64.4c8.2 0 15 6.8 15 15.2 0 7.8-6.8 14.6-15 14.6s-14.8-6.8-14.8-14.6c0-8.4 6.8-15.2 14.8-15.2Zm12.4-5.4c4.6-.8 9.2-1.2 13-1.2 20.4 0 34.6 9 34.6 27.8v53c0 5.2 3.6 7 7 7 2.8 0 4.6-1.6 6-3.4l1 .8c-3.6 7.4-13.4 12.6-23.8 12.6-12 0-21-6.6-21-18.4v-54c0-13.4-5.2-20.8-16.6-22.8l-.2-1.4Zm62.25 1.6 8.6 5.8v84.2l-10 2.8v1.2h51.2v-1.2l-10.4-2.8V46.6h-39.4v1.2Zm105.2 94v-1.2l-10.2-2.8V70.2c0-17.6-10.4-25.2-23.4-25.2-7.6 0-16.8 3.4-23.2 9.2v1.2c11.6 0 15.8 5.8 15.8 17v65.4l-8.6 2.8v1.2h49.6Zm55.6 0v-1.2l-10.2-2.8V70.2c0-17.6-10.4-25.2-23.4-25.2-7.6 0-16.8 3.4-23.2 9.2v1.2c11.6 0 15.8 5.8 15.8 17v65.4l-8.6 2.8v1.2h49.6Z"
+					/>
+				</svg>
+			</div>
 		</main>
-		<footer>
-			<ul
-				class="text-sm grid grid-cols-2 sm:grid-cols-3 gap-20 sm:gap-40"
-			>
-				<li>
-					<address>
-						<strong>London</strong><br />
-						Soho Works<br />
-						2 Television Centre<br />
-						101 Wood Lane<br />
-						London<br />
-						W12 7FR
-					</address>
-				</li>
-				<li>
-					<address>
-						<strong>Bristol</strong><br />
-						Gather Round<br />
-						15-16 Brunswick Sq<br />
-						Bristol<br />
-						BS2 8NX<br />
-					</address>
-				</li>
-				<li>
-					<address>
-						<strong>New York</strong><br />
-						Soho Works<br />
-						875 Washington St<br />
-						New York<br />
-						NY 10014<br />
-					</address>
-				</li>
-			</ul>
-		</footer>
 		
 	</body>
 </html>

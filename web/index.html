@@ -73,17 +73,16 @@
 			defer
 			src="https://cabin.sibylstudio.com/hello.js"
 		></script> -->
-		<script type="module" crossorigin src="/assets/main.682bd44f.js"></script>
-		<link rel="modulepreload" crossorigin href="/assets/app.e32abf4e.js">
-		<link rel="stylesheet" href="/assets/app.3df138ce.css">
+		<script type="module" crossorigin src="/assets/main.01b1f6eb.js"></script>
+		<link rel="modulepreload" crossorigin href="/assets/app.218734ab.js">
+		<link rel="stylesheet" href="/assets/app.1f1f0ef6.css">
 	</head>
 	<body
-		class="relative"
 		x-cloak
 		x-show="show"
-		x-data="{ show: false }"
-		x-init="$nextTick(() => { show = true })"
-		x-transition.opacity.duration.500ms
+		x-data="document"
+		x-transition.opacity.duration.1000ms
+		class="relative"
 	>
 		<header
 			x-cloak
@@ -93,6 +92,8 @@
 		>
 			<h1 class="sr-only">Beam</h1>
 			<button
+				x-show="show"
+				x-transition.opacity.delay.1000ms.duration.1000ms
 				@click="open = !open"
 				type="button"
 				aria-label="Menu"
@@ -105,7 +106,7 @@
 					:class="open ? 'translate-y-[9px] -rotate-45' : 'rotate-180'"
 				></span>
 				<span
-					class="absolute block w-full h-2 bg-current transition-opacity duration-1000 bottom-[9px] inset-x-0"
+					class="absolute block w-full h-2 bg-current transition-all duration-1000 bottom-[9px] inset-x-0"
 					:class="open && 'opacity-0'"
 				></span>
 				<span
@@ -182,36 +183,79 @@
 		<main class="bg-purple min-h-screen relative z-30">
 			<section class="flex flex-col">
 				<img
-					class="w-7/12 pt-[33vh]"
-					ix-src="https://soello.imgix.net/bemorebeam/1.jpg"
-					alt="A hot air balloon on a sunny day"
-					ix-sizes="auto"
+					class="w-7/12 pt-[33vh] lazyload blur-up"
+					data-sizes="auto"
+					data-srcset="
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=300&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=600&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=900&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=1200&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=300&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=600&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=900&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/1.jpg?fm=auto&w=1200&dpr=2 2x,
+					"
+					src="https://soello.imgix.net/bemorebeam/1.jpg?w=20"
 				/>
 				<img
-					class="w-1/2 pt-[33vh] place-self-end relative z-40"
-					ix-src="https://soello.imgix.net/bemorebeam/2.jpg"
-					alt="A hot air balloon on a sunny day"
-					ix-sizes="auto"
+					class="w-1/2 pt-[33vh] place-self-end relative z-40 lazyload blur-up"
+					data-sizes="auto"
+					data-srcset="
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=300&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=600&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=900&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=1200&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=300&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=600&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=900&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/2.jpg?fm=auto&w=1200&dpr=2 2x,
+					"
+					src="https://soello.imgix.net/bemorebeam/2.jpg?w=20"
 				/>
 				<img
-					class="w-5/12 pt-[10vh] ml-[33%]"
-					ix-src="https://soello.imgix.net/bemorebeam/3.jpg"
-					alt="A hot air balloon on a sunny day"
-					ix-sizes="auto"
+					class="w-5/12 pt-[10vh] ml-[33%] lazyload blur-up"
+					data-sizes="auto"
+					data-srcset="
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=300&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=600&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=900&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=1200&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=300&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=600&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=900&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/3.jpg?fm=auto&w=1200&dpr=2 2x,
+					"
+					src="https://soello.imgix.net/bemorebeam/3.jpg?w=20"
 				/>
-
 				<img
-					class="w-3/12 pt-[10vh]"
-					ix-src="https://soello.imgix.net/bemorebeam/4.jpg"
-					alt="A hot air balloon on a sunny day"
-					ix-sizes="auto"
+					class="w-3/12 pt-[10vh] lazyload blur-up"
+					data-sizes="auto"
+					data-srcset="
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=300&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=600&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=900&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=1200&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=300&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=600&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=900&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/4.jpg?fm=auto&w=1200&dpr=2 2x,
+					"
+					src="https://soello.imgix.net/bemorebeam/4.jpg?w=20"
 				/>
-
 				<img
-					class="w-1/2 -mt-[10vh] place-self-end"
-					ix-src="https://soello.imgix.net/bemorebeam/5.jpg"
-					alt="A hot air balloon on a sunny day"
-					ix-sizes="auto"
+					class="w-1/2 -mt-[10vh] place-self-end lazyload blur-up"
+					data-sizes="auto"
+					data-srcset="
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=300&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=600&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=900&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=1200&dpr=1 1x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=300&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=600&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=900&dpr=2 2x,
+						https://soello.imgix.net/bemorebeam/5.jpg?fm=auto&w=1200&dpr=2 2x,
+					"
+					src="https://soello.imgix.net/bemorebeam/5.jpg?w=20"
 				/>
 
 				<!-- <div
@@ -224,10 +268,13 @@
 					</h2>
 				</div> -->
 			</section>
-			<div class="fixed bottom-20 inset-x-20">
+			<div
+				x-show="show"
+				x-transition.opacity.delay.1000ms.duration.1000ms
+				class="fixed bottom-20 inset-x-20"
+			>
 				<svg
-					class="w-full fill-current"
-					fill="currentColor"
+					class="w-full fill-white"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 456 143"
 				>

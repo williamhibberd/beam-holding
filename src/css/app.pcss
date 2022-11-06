@@ -24,4 +24,10 @@
 	address {
 		@apply not-italic;
 	}
+	.blur-up {
+		@apply transition-all translate-y-1/4 duration-[2000ms] delay-500 opacity-0 filter blur-md;
+	}
+	.blur-up.lazyloaded {
+		@apply opacity-100 translate-y-0 blur-none;
+	}
 }

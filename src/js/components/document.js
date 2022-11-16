@@ -1,25 +1,20 @@
 const container = document.querySelector("#container");
 const content = document.querySelector("#content");
-const innerItems = [...content.querySelectorAll(".inner-item")];
 
-innerItems.forEach((item) => {
-	let clonedItems = item.cloneNode(true);
-	content.appendChild(clonedItems);
-});
-
-// Set scroll dimensions
-function init() {
-	// document.body.style.height = `${content.getBoundingClientRect().height}px`;
-}
-window.addEventListener("resize", init);
+// not sure if we need to close these if we have enough spacing top
+// const innerItems = [...content.querySelectorAll(".inner-item")];
+// innerItems.forEach((item) => {
+// 	let clonedItems = item.cloneNode(true);
+// 	clonedItems.classList.add("cloned");
+// 	content.appendChild(clonedItems);
+// });
 
 let target = 1;
-
-function foo() {
+function autoScroll() {
 	target = window.scrollY;
 
-	console.log(content.offsetHeight);
-	console.log(target);
+	// console.log(content.offsetHeight);
+	// console.log(target);
 
 	if (target <= 0) {
 		target = content.offsetHeight / 2 - 1;
@@ -32,12 +27,10 @@ function foo() {
 	target++;
 	window.scrollTo(0, target);
 	container.style.transform = `translateY(-${target}px)`;
-	requestAnimationFrame(foo);
+	requestAnimationFrame(autoScroll);
 }
 
-init();
-
 document.addEventListener("DOMContentLoaded", () => {
-	window.scrollTo(0, window.innerHeight * 0.3);
-	foo();
+	window.scrollTo(0, 0);
+	autoScroll();
 });

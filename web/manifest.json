@@ -10,7 +10,7 @@
     "integrity": "sha384-DfslUR8a69ZBh/2rIGS8McaRaojEuqB+q8chPhpwjB8u1CB0mPotEW+CrJ2iOJhw"
   },
   "src/js/app.js": {
-    "file": "assets/app.969beae8.js",
+    "file": "assets/app.338f4e2b.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
@@ -20,16 +20,16 @@
       "assets/visuelt-regular.e711c649.woff2",
       "assets/visuelt-medium.4aefe799.woff2"
     ],
-    "integrity": "sha384-7GqVR0VLQLes5kWgQ5PNy+1jcH1o6rz5HXx6BxjfweZ5p/fnHTJDpyBYcr5DRI07"
+    "integrity": "sha384-5XkQeK/gGCIeNApSZrstCcSIvKvwLHgyxB/fMgQTkOJMvNX8x7/yuMFBum7mKMnq"
   },
   "index.html": {
-    "file": "assets/main.8a48aef6.js",
+    "file": "assets/main.916f2318.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-8aMUqCIKYm6x+OeGRIJPiWZYDq7VCUR0UyLOUptrbUa2tIEHdlC/jzl/WtMh41tk"
+    "integrity": "sha384-v62ft9ZkNUngH50pUSH6zu8kQRxwyvp/UBsalaaDNu08KZQGxcPcjjUmfVzZ/VXm"
   },
   "src/js/app.css": {
     "file": "assets/app.02076ee2.css",

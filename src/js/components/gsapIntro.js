@@ -100,7 +100,7 @@ function textTwo() {
 	textTwoTl.fromTo(
 		"body",
 		{
-			backgroundColor: "#73854B",
+			backgroundColor: "#93CC9C",
 		},
 		{
 			backgroundColor: "#6871FF",

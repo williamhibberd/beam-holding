@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function intro() {
-	console.log("intro running");
+	// console.log("intro running");
 	const introTl = gsap.timeline({
 		defaults: {
 			duration: 0.5,
@@ -43,7 +43,7 @@ function intro() {
 }
 
 function textOne() {
-	console.log("textOneTl running");
+	// console.log("textOneTl running");
 	var textOneTl = gsap.timeline({
 		scrollTrigger: {
 			// markers: true,
@@ -71,7 +71,7 @@ function textOne() {
 	});
 }
 function textTwo() {
-	console.log("textTwoTl running");
+	// console.log("textTwoTl running");
 	var textTwoTl = gsap.timeline({
 		scrollTrigger: {
 			// markers: true,

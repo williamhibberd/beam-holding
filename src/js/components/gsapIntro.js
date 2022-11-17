@@ -9,10 +9,17 @@ function intro() {
 			duration: 0.5,
 		},
 	});
-	introTl.from("body", {
-		opacity: 0,
-		backgroundColor: "#fff",
-	});
+	introTl.fromTo(
+		"body",
+		{
+			opacity: 0,
+			backgroundColor: "#fff",
+		},
+		{
+			opacity: 1,
+			backgroundColor: "#6871FF",
+		}
+	);
 	introTl.to("header", {
 		opacity: 1,
 	});
@@ -93,7 +100,7 @@ function textTwo() {
 	textTwoTl.fromTo(
 		"body",
 		{
-			backgroundColor: "#CCAFF3",
+			backgroundColor: "#73854B",
 		},
 		{
 			backgroundColor: "#6871FF",
@@ -103,9 +110,7 @@ function textTwo() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	setTimeout(() => {
-		textOne();
-		textTwo();
-	}, 1000);
 	intro();
+	textOne();
+	textTwo();
 });

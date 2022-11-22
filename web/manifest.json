@@ -1,13 +1,13 @@
 {
-  "src/fonts/visuelt-regular.woff2": {
-    "file": "assets/visuelt-regular.e711c649.woff2",
-    "src": "src/fonts/visuelt-regular.woff2",
-    "integrity": "sha384-XFugaPHYAk3MAIOOg1Kc9y9oxi4HVsBrzdO3lGO7rkr7qMHpVXBaKjMcz5F/LBvj"
-  },
   "src/fonts/visuelt-medium.woff2": {
     "file": "assets/visuelt-medium.4aefe799.woff2",
     "src": "src/fonts/visuelt-medium.woff2",
     "integrity": "sha384-DfslUR8a69ZBh/2rIGS8McaRaojEuqB+q8chPhpwjB8u1CB0mPotEW+CrJ2iOJhw"
+  },
+  "src/fonts/visuelt-regular.woff2": {
+    "file": "assets/visuelt-regular.e711c649.woff2",
+    "src": "src/fonts/visuelt-regular.woff2",
+    "integrity": "sha384-XFugaPHYAk3MAIOOg1Kc9y9oxi4HVsBrzdO3lGO7rkr7qMHpVXBaKjMcz5F/LBvj"
   },
   "src/js/app.js": {
     "file": "assets/app.3aeb000d.js",
